@@ -1,6 +1,6 @@
 import animations from './animations'
 import { toastObject } from './object'
-const uuid = { generate: () => `${Date.now()}-${Math.random().toString(36).splice(2, 9)}` }
+const uuid = { generate: () => `${Date.now()}-${Math.random().toString(36).substring(2, 9)}` }
 
 // string includes polyfill
 if (!String.prototype.includes) {

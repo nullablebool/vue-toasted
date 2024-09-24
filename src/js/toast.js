@@ -1,6 +1,6 @@
 import show from './show'
 import animations from './animations'
-const uuid = { generate: () => `${Date.now()}-${Math.random().toString(36).splice(2, 9)}` }
+const uuid = { generate: () => `${Date.now()}-${Math.random().toString(36).substring(2, 9)}` }
 
 /**
  * Toast
