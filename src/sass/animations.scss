@@ -1,28 +1,30 @@
-.animate {
-  transition: all 0.3s ease-out;
-  opacity: 0;
-}
+.toasted-container {
+  .animate {
+    transition: all 0.3s ease-out;
+    opacity: 0;
+  }
 
-.animate.in {
-  transform: translateY(-35px);
-  opacity: 1;
-}
+  .animate.in {
+    transform: translateY(-35px);
+    opacity: 1 !important;
+  }
 
-.animate.out {
-  opacity: 0;
-  margin-top: -40px;
-}
+  .animate.out {
+    opacity: 0;
+    margin-top: -40px;
+  }
 
-.animate.out-bottom {
-  opacity: 0;
-  margin-bottom: -40px;
-}
+  .animate.out-bottom {
+    opacity: 0;
+    margin-bottom: -40px;
+  }
 
-.animate.reset {
-  left: 0;
-  opacity: 1;
-}
+  .animate.reset {
+    left: 0;
+    opacity: 1;
+  }
 
-.animate.panning {
-  transition: left 0.01s ease-out, opacity 0.01s ease-out;
+  .animate.panning {
+    transition: left 0.01s ease-out, opacity 0.01s ease-out;
+  }
 }
