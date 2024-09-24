@@ -141,7 +141,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 
 var uuid = { generate: function generate() {
-    return Date.now() + '-' + Math.random().toString(36).splice(2, 9);
+    return Date.now() + '-' + Math.random().toString(36).substring(2, 9);
   }
 
   /**
@@ -554,7 +554,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 
 var uuid = { generate: function generate() {
-    return Date.now() + '-' + Math.random().toString(36).splice(2, 9);
+    return Date.now() + '-' + Math.random().toString(36).substring(2, 9);
   }
 
   // string includes polyfill
