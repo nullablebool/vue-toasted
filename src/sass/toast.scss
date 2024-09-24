@@ -1,5 +1,6 @@
-@import "mixins";
-@import "themes";
+@import 'mixins';
+@import 'themes';
+@import 'animations';
 
 .toasted-container {
   // fix for min-height bug in IE
@@ -16,7 +17,7 @@
 
     // check if user needs this to be fitted into screen
     &.fit-to-screen {
-      @include fit-to-screen
+      @include fit-to-screen;
     }
   }
 
@@ -55,11 +56,13 @@
   }
 
   // fix positioning floating
-  &.top-left .toasted, &.bottom-left .toasted {
+  &.top-left .toasted,
+  &.bottom-left .toasted {
     float: left;
   }
 
-  &.top-right .toasted, &.bottom-right .toasted {
+  &.top-right .toasted,
+  &.bottom-right .toasted {
     float: right;
   }
 
@@ -78,13 +81,18 @@
     justify-content: space-between;
     box-sizing: inherit;
 
-    .material-icons, .fa, .fas, .far, .fab, .mdi {
-      margin-right: .5rem;
-      margin-left: -.4rem;
+    .material-icons,
+    .fa,
+    .fas,
+    .far,
+    .fab,
+    .mdi {
+      margin-right: 0.5rem;
+      margin-left: -0.4rem;
 
       &.after {
-        margin-left: .5rem;
-        margin-right: -.4rem;
+        margin-left: 0.5rem;
+        margin-right: -0.4rem;
       }
     }
 
@@ -96,7 +104,7 @@
       margin: 5px -7px 5px 7px;
       border-radius: 3px;
       text-transform: uppercase;
-      letter-spacing: .03em;
+      letter-spacing: 0.03em;
       font-weight: 600;
       cursor: pointer;
 
@@ -115,7 +123,9 @@
         align-items: center;
         justify-content: center;
 
-        .material-icons, .fa, .mdi {
+        .material-icons,
+        .fa,
+        .mdi {
           margin-right: 0;
           margin-left: 4px;
         }
@@ -136,11 +146,15 @@
   .toasted-container {
     @include fit-to-screen;
 
-    &.top-center, &.bottom-center {
+    &.top-center,
+    &.bottom-center {
       align-items: stretch !important;
     }
 
-    &.top-right, &.top-left, &.bottom-left, &.bottom-right {
+    &.top-right,
+    &.top-left,
+    &.bottom-left,
+    &.bottom-right {
       .toasted {
         float: none;
       }
@@ -149,6 +163,5 @@
     .toasted {
       border-radius: 0;
     }
-
   }
 }

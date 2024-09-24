@@ -1,6 +1,8 @@
 export default {
   animateIn: (el) => {
     el.classList.add('animate', 'in')
+
+    // el.style.opacity = 1
   },
   animateOut: (el, onComplete) => {
     el.classList.add('animate', 'out')
